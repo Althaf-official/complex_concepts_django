@@ -20,7 +20,3 @@ def about_view(request, *args, **kwargs):
 
 def social_view(request, *args, **kwargs):
     return render(request, "social.html",{})
-
-
-def contact_view(*args, **kwargs):
-    return HttpResponse("<h1>contact page</h1>")
