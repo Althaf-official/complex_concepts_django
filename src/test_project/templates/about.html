@@ -2,13 +2,14 @@
 
 {% block content %}
 <h1>this is about page inherit  block content</h1>
-<h1>this is about page inherit block contente</h1>
+<h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil itaque temporibus alias quia, voluptatibus voluptatem quam explicabo quasi eos expedita debitis deleniti sunt error corporis rerum similique incidunt dolorum cum!</h1>
 replace me
-
+<h1>{{ title|upper }} this is something</h1>
+<h3>{{ title|capfirst }}</h3>
 
 <p>
     <h1>
-        {{ my_text }},{{ my_number }},{{my_list}}
+        {{ my_number }},{{my_list}}
     </h1>
 </p>
 
@@ -20,7 +21,7 @@ replace me
 <ul>
 {% for abc in my_list  %}
     {% if abc == 312 %}
-        <li>{{ forloop.counter }}-{{ abc|add:22 }}</li>
+        <li>{{ forloop.counter }}-{{ abc|add:10 }}</li>
     {% elif abc == "Abc" %}
         <li>This is not the network</li>
     {% else %}
@@ -29,6 +30,7 @@ replace me
 
 {% endfor %}
 </ul>
+
 
 
 {% endblock content %}
