@@ -20,6 +20,7 @@ def about_view(request, *args, **kwargs):
         "this_is_true":True,
         "my_number": 1234,
         "my_list":[123,456,312,"Abc"],
+        "my_html": "<h1>Hello world</h1>"
 
     }
     return render(request,"about.html",my_context)
